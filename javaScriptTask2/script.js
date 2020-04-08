@@ -9,7 +9,7 @@ function interestCalculator(arr) {
             arr[i].rate = 3;
         } else if(arr[i].principal >= 2500 && arr[i].time >= 3){
             arr[i].rate = 4;
-        } else if(arr[i].principal < 2500 && arr[i].time <= 1){
+        } else if(arr[i].principal < 2500 || arr[i].time <= 1){
             arr[i].rate = 2;
         } else{
             arr[i].rate = 1;
